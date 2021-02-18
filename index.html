@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <title>3d Card</title>
+  </head>
+
+  <body>
+    <div class="radio-group">
+      <div class="selection">
+        <input type="radio" id="front" name="cube-side" value="front" checked />
+        <label for="front">Front</label>
+      </div>
+      <div class="selection">
+        <input type="radio" id="right" name="cube-side" value="right" />
+        <label for="right">Right</label>
+      </div>
+      <div class="selection">
+        <input type="radio" id="back" name="cube-side" value="back" />
+        <label for="back">Back</label>
+      </div>
+      <div class="selection">
+        <input type="radio" id="left" name="cube-side" value="left" />
+        <label for="left">Left</label>
+      </div>
+      <div class="selection">
+        <input type="radio" id="top" name="cube-side" value="top" />
+        <label for="top">Top</label>
+      </div>
+      <div class="selection">
+        <input type="radio" id="bottom" name="cube-side" value="bottom" />
+        <label for="bottom">Bottom</label>
+      </div>
+    </div>
+    <div class="scene">
+      <!--3d space-->
+      <div class="cube" id="cube1">
+        <!--3d object-->
+        <div class="cube__face cube__face--front">FRONT</div>
+        <div class="cube__face cube__face--right">BACK</div>
+        <div class="cube__face cube__face--back">RIGHT</div>
+        <div class="cube__face cube__face--left">LEFT</div>
+        <div class="cube__face cube__face--top">TOP</div>
+        <div class="cube__face cube__face--bottom">BOTTOM</div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
