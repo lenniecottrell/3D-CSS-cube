@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  background: #9fd6ad;
 }
 
 .scene {
@@ -23,7 +24,7 @@ body {
 .radio-group {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-self: center;
   max-width: 50%;
   border: 1px solid purple;
@@ -38,10 +39,10 @@ body {
   background: rgba(173, 216, 230, 0.753);
   border-radius: 5px;
   padding: 1rem;
-  overflow: inherit;
+  /* overflow: inherit; */
 }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 800px) {
   .scene {
     margin-top: 2rem;
   }
@@ -81,27 +82,27 @@ body {
 }
 
 .cube__face--front {
-  background-color: #fa8072;
+  background-color: #ff1919;
   transform: rotateY(0deg) translateZ(100px);
 }
 .cube__face--back {
-  background-color: #adff2f;
+  background-color: #e5ff00;
   transform: rotateY(90deg) translateZ(100px);
 }
 .cube__face--right {
-  background-color: #ffff00;
+  background-color: #00910c;
   transform: rotateY(180deg) translateZ(100px);
 }
 .cube__face--left {
-  background-color: #00ffff;
+  background-color: #00eeff;
   transform: rotateY(-90deg) translateZ(100px);
 }
 .cube__face--top {
-  background-color: #4f4ffd;
+  background-color: #4727ff;
   transform: rotateX(90deg) translateZ(100px);
 }
 .cube__face--bottom {
-  background-color: #ffc0cb;
+  background-color: #a619f8;
   transform: rotateX(-90deg) translateZ(100px);
 }
 
